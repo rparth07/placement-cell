@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import fire from "./fire";
 import Login from "./Login";
-import about from "./about";
+import Hero from "./Hero";
 import "./App.css";
 
 const App = () => {
@@ -78,7 +78,7 @@ const App = () => {
   return (
     <div className="App">
       {user ? (
-        <about handleLogout={handleLogout} />
+        <Hero handleLogout={handleLogout} />
       ) : (
         <Login
           email={email}
