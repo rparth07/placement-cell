@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  background-color: #603bbb;
+}
+.rowcolor {
+  background-color: #3a2b58;
+  padding-left: 10px;
+}
+.Name {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.Country {
+  padding-right: 30px;
+  color: whitesmoke;
+}
+.City {
+  padding-right: 60px;
+  color: whitesmoke;
+}
+.Home {
+  padding-right: 21px;
+  color: whitesmoke;
+}
+.Gender {
+  padding-right: 42px;
+  color: whitesmoke;
+}
+.Industry {
+  padding-right: 31px;
+  color: whitesmoke;
+}
+.Role {
+  padding-right: 61px;
+  color: whitesmoke;
+}
+.Employement {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.Shifts {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.Loction {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.salary {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.Job {
+  padding-right: 60px;
+  color: whitesmoke;
+}
+.Experience {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.color {
+  color: whitesmoke;
+}
+.Phone {
+  padding-right: 10px;
+  color: whitesmoke;
+}
+.Email {
+  padding-right: 50px;
+  color: whitesmoke;
+}
+.space {
+  padding-left: 300px;
+  color: whitesmoke;
+}
+.button {
+  color: bluevioletss;
+  padding-left: 270px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

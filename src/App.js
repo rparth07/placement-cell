@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+/*import React, { useState, useEffect } from "react";
 import fire from "./fire";
 import Login from "./Login";
-import about from "./about";
+import Hero from "./Hero";
 import "./App.css";
 
 const App = () => {
@@ -78,7 +78,7 @@ const App = () => {
   return (
     <div className="App">
       {user ? (
-        <about handleLogout={handleLogout} />
+        <Hero handleLogout={handleLogout} />
       ) : (
         <Login
           email={email}
@@ -96,5 +96,97 @@ const App = () => {
     </div>
   );
 };
+*/
+import { functions } from "firebase";
+import React, { useState, useEffect } from "react";
+import {
+  Redirect,
+  Route,
+  BrowserRouter as Router,
+  Switch,
+} from "react-router-dom";
+import NotFoundPage from "./Home/404";
+import Hero from "./Home/Hero";
+import Sampleresume from "./Home/Sampleresume";
+import Newsfeed from "./Home/Newsfeed";
+import Login from "./Login";
+import Profile from "./profile/Profile";
+import profile2 from "./profile/profile2";
+import Companylist from "./Home/company/Companylist";
+import fire from "./fire";
+import "./App.css";
+import { auth } from "firebase";
+import useHistory from "react-router-dom";
+import Placementquestions from "./Home/Placementquestions";
+import Snaphunt from "./Home/company/Snaphunt";
+import Multirecruit from "./Home/company/Multirecruit";
+import Nasportz from "./Home/company/Nasportz";
+
+function App() {
+  const [user, setUser] = useState([]);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const clearInputs = () => {
+    setEmail("");
+    setPassword("");
+  };
+  const authListener = () => {
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        clearInputs();
+        setUser(user);
+      } else {
+        setUser(false);
+      }
+    });
+  };
+
+  useEffect(() => {
+    authListener();
+  }, []);
+
+  return (
+    <div className="app">
+      <Router>
+        <Switch>
+          <Route exact path="/home">
+            <Hero user={user} />
+          </Route>
+          <Route exact path="/Home">
+            <Profile user={user} />
+          </Route>
+          <Route exact path="/newsfeed">
+            <Newsfeed user={user} />
+          </Route>
+          <Route exact path="/snaphunt">
+            <Snaphunt user={user} />
+          </Route>
+          <Route exact path="/multirecruit">
+            <Multirecruit user={user} />
+          </Route>
+          <Route exact path="/nasportz">
+            <Nasportz user={user} />
+          </Route>
+
+          <Route exact path="/placementquestions">
+            <Placementquestions user={user} />
+          </Route>
+          <Route exact path="/companylist">
+            <Companylist user={user} />
+          </Route>
+          <Route exact path="/sampleresume" component={Sampleresume} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/profile2" component={profile2} />
+          <Route exact path="/profile">
+            <Profile user={user} />
+          </Route>
+          <Route exact path="/404" component={NotFoundPage} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
+    </div>
+  );
+}
 
 export default App;
