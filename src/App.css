@@ -94,7 +94,6 @@ button {
 
 .about {
   width: 100%;
-
   background: radial-gradient(
     ellipse at left bottom,
     rgba(22, 24, 47, 1) 0%,
@@ -102,7 +101,13 @@ button {
     rgba(17, 27, 75, 0.9) 100%
   );
 }
-
+.aboutMHt {
+  min-height: 100vh;
+  color: whitesmoke;
+}
+.space {
+  padding-left: 2px;
+}
 .about nav {
   background: #603bbb;
   width: 100%;
@@ -115,14 +120,13 @@ button {
 .about nav h2 {
   color: #fff;
 }
-.App {
-  color: #fff;
-}
+
 .about nav button {
-  width: 86px;
+  width: 150px;
   padding: 8px 0;
   background: #3a2b58;
 }
+
 .page {
   width: 100%;
   padding: 8px 800px;

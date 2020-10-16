@@ -22,13 +22,13 @@ function Hero({ user }) {
   };
   return (
     <div className="homeHeader">
-      <section className="about">
+      <section className="about aboutMHt">
         <nav>
           <Link to="/home">
             <button>Home</button>
           </Link>
-          <Link to="/newsfeed">
-            <button>newsfeed</button>
+          <Link to="/interviewQuesions">
+            <button>InterviewQuesions</button>
           </Link>
           <Link to="/companylist">
             <button>companylist</button>
@@ -38,6 +38,9 @@ function Hero({ user }) {
           </Link>
           <Link to="/placementquestion">
             <button>placementquestion</button>
+          </Link>
+          <Link to="/profile">
+            <button>Profile</button>
           </Link>
 
           <button onClick={logout}>Logout</button>

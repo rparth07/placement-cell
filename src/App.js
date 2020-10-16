@@ -108,10 +108,9 @@ import {
 import NotFoundPage from "./Home/404";
 import Hero from "./Home/Hero";
 import Sampleresume from "./Home/Sampleresume";
-import Newsfeed from "./Home/Newsfeed";
+import InterviewQuesions from "./Home/InterviewQuesions";
 import Login from "./Login";
 import Profile from "./profile/Profile";
-import profile2 from "./profile/profile2";
 import Companylist from "./Home/company/Companylist";
 import fire from "./fire";
 import Hrdesire from "./Home/company/Hrdesire";
@@ -158,8 +157,11 @@ function App() {
           <Route exact path="/Home">
             <Profile user={user} />
           </Route>
-          <Route exact path="/newsfeed">
-            <Newsfeed user={user} />
+          <Route exact path="/placementquestion">
+            <Placementquestions user={user} />
+          </Route>
+          <Route exact path="/interviewQuesions">
+            <InterviewQuesions user={user} />
           </Route>
           <Route exact path="/snaphunt">
             <Snaphunt user={user} />
@@ -185,7 +187,7 @@ function App() {
           </Route>
           <Route exact path="/sampleresume" component={Sampleresume} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/profile2" component={profile2} />
+
           <Route exact path="/profile">
             <Profile user={user} />
           </Route>

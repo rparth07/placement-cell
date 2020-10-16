@@ -33,8 +33,8 @@ function Profile({ user }) {
           <Link to="/home">
             <button>Home</button>
           </Link>
-          <Link to="/newsfeed">
-            <button>newsfeed</button>
+          <Link to="/interviewQuesions">
+            <button>InterviewQuesions</button>
           </Link>
           <Link to="/companylist">
             <button>companylist</button>
@@ -45,20 +45,9 @@ function Profile({ user }) {
           <Link to="/profile">
             <button>Profile</button>
           </Link>
-          <div className="homeHeader_inputSearch">
-            <input type="text" placeholder="search" />
-            <SearchIcon className="homeheader_input" />
-          </div>
-          <div className="homeHeader_icons">
-            <section>
-              <Avatar className="homeHeader_avatar" alt="" src="" />
-              <h3 className="homeHeader_name">{user?.displayName}</h3>
-            </section>
-            <div className="homeHeader_dash">|</div>
-          </div>
         </nav>
 
-        <div className="App">
+        <div className="about aboutMHt">
           <h1>Profile </h1>
           <div class="container">
             <div class="row">
@@ -73,12 +62,7 @@ function Profile({ user }) {
                 <br />
                 <div class="row text-left">
                   <label class="font-weight-bold Country">Country</label>
-                  <select
-                    width="100px"
-                    name="Country"
-                    class="Country"
-                    id="Country"
-                  >
+                  <select width="100px" name="Country" id="Country">
                     <option value="">Select Country</option>
                     <option value="">India</option>
                     <option value="">Afghanistan</option>

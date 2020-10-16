@@ -17,4 +17,30 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 export const storage = firebase.storage();
 
+const docRef = firestore.doc("users/profiles");
+const outputHeader = document.querySelector("anything");
+const inputTextField = document.querySelector("textfeild");
+const saveButton = document.querySelector("savebutton");
+/*
+saveButton.addEventListener("click", function () {
+  const textToSave = inputTextField.value;
+  docRef
+    .set({
+      name: textToSave,
+    })
+    .then(function () {
+      console.log("status saved");
+    })
+    .catch(function (error) {
+      console.log("Got an error", error);
+    });
+});
+savebutton.getRealtimeUpdate = function () {
+  docRef.onSnapshot(function (doc) {
+    if (doc && doc.exists) {
+      const myData = doc.data();
+      outputHeader.innerText = "this is name:" + myData.Status;
+    }
+  });
+};*/
 export default fire;

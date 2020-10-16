@@ -8,8 +8,8 @@ function Companylist({ user }) {
           <Link to="/home">
             <button>Home</button>
           </Link>
-          <Link to="/newsfeed">
-            <button>newsfeed</button>
+          <Link to="/interviewQuesions">
+            <button>InterviewQuesions</button>
           </Link>
           <Link to="/companylist">
             <button>companylist</button>
@@ -17,12 +17,15 @@ function Companylist({ user }) {
           <Link to="/sampleresume">
             <button>sampleresume</button>
           </Link>
+          <Link to="/placementquestion">
+            <button>placementquestion</button>
+          </Link>
           <Link to="/profile">
             <button>Profile</button>
           </Link>
         </nav>
       </section>
-      <div className="about">
+      <div className="about aboutMHt">
         <center>
           <a href="snaphunt">snaphunt Pte Ltd</a>
           <br />
