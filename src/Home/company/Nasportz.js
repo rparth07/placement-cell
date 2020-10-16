@@ -1,6 +1,5 @@
 import React from "react";
-import "./nasportz.css";
-
+import "./multirecruit.css";
 function Nasportz() {
   return (
     <div>
@@ -76,9 +75,13 @@ function Nasportz() {
               Asynchronous requests handling and partial page updates, Browser
               Developer Tools, GIT and JIRA
               <br />
-              <br />
-              <a href="/companylist">back</a>
-              <br />
+              <center>
+                <a href="">Apply</a>
+                <span class="right">
+                  <a href="/companylist">back</a>
+                </span>
+                <br />
+              </center>
             </div>
           </div>
         </div>

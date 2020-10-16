@@ -18,7 +18,7 @@ function Hero({ user }) {
   const logout = (event) => {
     event.preventDefault();
     auth.signOut();
-    history.push("/");
+    history.push("/login");
   };
   return (
     <div className="homeHeader">
@@ -39,19 +39,7 @@ function Hero({ user }) {
           <Link to="/placementquestion">
             <button>placementquestion</button>
           </Link>
-          <div className="homeHeader_inputSearch">
-            <input type="text" placeholder="search" />
-            <SearchIcon className="homeheader_input" />
-          </div>
-          <div className="homeHeader_icons">
-            <section>
-              <Avatar className="homeHeader_avatar" alt="" src="" />
-              <h3 className="homeHeader_name">{user?.displayName}</h3>
-            </section>
-            <div className="homeHeader_dash">|</div>
-          </div>
 
-          <h2>Welcome to Home Page</h2>
           <button onClick={logout}>Logout</button>
           <br />
         </nav>

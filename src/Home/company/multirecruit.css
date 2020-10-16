@@ -10,7 +10,9 @@
 .title {
   background-color: #3a2b58;
 }
-
+.right {
+  padding-left: 900px;
+}
 .Name {
   padding-right: 10px;
   color: whitesmoke;

@@ -83,9 +83,13 @@ function Multirecruit() {
             <br />
             Node.js, , MySQL, PostgreSQL, Redis, ElasticSearch,.
             <br />
-            <br />
-            <a href="/companylist">back</a>
-            <br />
+            <center>
+              <a href="">Apply</a>
+              <span class="right">
+                <a href="/companylist">back</a>
+              </span>
+              <br />
+            </center>
           </div>
         </div>
       </div>

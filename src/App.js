@@ -114,6 +114,8 @@ import Profile from "./profile/Profile";
 import profile2 from "./profile/profile2";
 import Companylist from "./Home/company/Companylist";
 import fire from "./fire";
+import Hrdesire from "./Home/company/Hrdesire";
+import Talentcornerhrserviices from "./Home/company/Talentcornerhrserviices";
 import "./App.css";
 import { auth } from "firebase";
 import useHistory from "react-router-dom";
@@ -167,6 +169,12 @@ function App() {
           </Route>
           <Route exact path="/nasportz">
             <Nasportz user={user} />
+          </Route>
+          <Route exact path="/hrdesire">
+            <Hrdesire user={user} />
+          </Route>
+          <Route exact path="/talentcornerhrserviices">
+            <Talentcornerhrserviices user={user} />
           </Route>
 
           <Route exact path="/placementquestions">

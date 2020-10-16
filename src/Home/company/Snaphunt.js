@@ -1,5 +1,5 @@
 import React from "react";
-import "./snaphunt.css";
+import "./multirecruit.css";
 function snaphunt({ user }) {
   return (
     <div className="App">
@@ -63,10 +63,13 @@ function snaphunt({ user }) {
               ->You are analytical by nature and have a critical problem solving
               approach.
             </p>
-            <br />
-            <a href="/companylist">back</a>
-            <br />
-            <br />
+            <center>
+              <a href="">Apply</a>
+              <span class="right">
+                <a href="/companylist">back</a>
+              </span>
+              <br />
+            </center>
           </div>
         </div>
       </div>

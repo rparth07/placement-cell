@@ -94,7 +94,7 @@ button {
 
 .about {
   width: 100%;
-  min-height: 100vh;
+
   background: radial-gradient(
     ellipse at left bottom,
     rgba(22, 24, 47, 1) 0%,
@@ -115,7 +115,9 @@ button {
 .about nav h2 {
   color: #fff;
 }
-
+.App {
+  color: #fff;
+}
 .about nav button {
   width: 86px;
   padding: 8px 0;
